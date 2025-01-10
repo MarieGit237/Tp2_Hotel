@@ -15,6 +15,6 @@ int Chambre::getPrix() const{
   return _prix;
 }
 
-int Chambre::setPrix(int prix){
-  return _prix;
+void Chambre::setPrix(int prix){
+   _prix=prix;
 }
