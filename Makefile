@@ -1,4 +1,4 @@
-SRC_FILES =chambre.cpp main2.cpp
+SRC_FILES =chambre.cpp main2.cpp client.cpp main3.cpp date.cpp main1.cpp hotel.cpp main4.cpp
 APP =app
 CXX = g++
 CXXFLAGS =-Wall -std=c++17
