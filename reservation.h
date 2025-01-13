@@ -14,14 +14,14 @@ class Reservation
     int _montant_total;
     
   public:
-    Reservation(Date date_debut, int nombre_nuits, int prix_nuit, std::string identifiant_hotel, std::string identifiant_chambre, std::string identifiant_client);
+    Reservation(Date date_debut, int nombre_nuits, int prix_nuit, std::string identifiant_hotel, std::string identifiant_chambre, std::string identifiant_client,int montant_total);
     Date getDateDebut();
     int getNombreNuits();
     int getPrixNuit();
     std::string getIdentifiantHotel();
     std::string getIdentifiantChambre();
     std::string getIdentifiantClient();
-    void modificationNombreNuits(int montant_total);
-    void calculMontantReservation(int nombre_nuits, int prix_nuit);
+    void modification(Date date, int montant_total);
+    int calculMontantReservation(int nombre_nuits, int prix_nuit);
     int getMontantTotal();
 };
